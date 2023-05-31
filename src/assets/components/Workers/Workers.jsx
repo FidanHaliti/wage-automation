@@ -8,7 +8,7 @@ const Workers = (props) => {
   const [entredWorkerWage, SetEntredWorkerWage] = useState("");
   const [error, setError] = useState()
 
-  const minimumWage = 2000
+  const minimumWage = 1000
 
   const workerNameChangeHandler = (e) => {
     SetEntredWorkerName(e.target.value);
@@ -51,12 +51,12 @@ const Workers = (props) => {
    
   };
   return (
-    <div className="">
+    <div className="form-card">
       {error && <ErrorModal onConfirm={errorHandler} error={error}/>}
     <Card className="mt-10 ">
       <form action="" className="flex flex-col" onSubmit={addWorkerHandler}>
         <label htmlFor="name" className="text-left text-black">
-          Sheno Emrin
+          Shenoje Emrin
         </label>
         <input
           type="text"
@@ -67,12 +67,12 @@ const Workers = (props) => {
           value={entredWorkerName}
         />
         <label htmlFor="wage" className="text-left text-black">
-          Paga
+          Paga e Puntorit
         </label>
         <input
           type="number"
           className="max-w-[40rem] w-full mx-auto border p-2"
-          placeholder="Paga:"
+          placeholder="Paga min 1000:"
           id="wage"
           onChange={workerWageChangeHandler}
           value={entredWorkerWage}

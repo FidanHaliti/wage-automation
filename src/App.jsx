@@ -8,7 +8,7 @@ function App() {
 const [workers, setWorkers] = useState([])
 
   return (
-    <div className="">  
+    <div className="app-card">  
     <h1 className='mt-6 text-center text-white text-3xl'>Automation salary</h1>
       <Workers setWorkers={setWorkers}/>
       <WorkerList workers={workers} setWorkers={setWorkers}/>
