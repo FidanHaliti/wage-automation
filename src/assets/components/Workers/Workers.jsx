@@ -22,7 +22,7 @@ const Workers = (props) => {
       entredWorkerName.trim().length === 0 
     ) {
       setError({
-        title:"Duhet te Shenohet Emri!",
+        title:"Duhet te shenohet emri!",
       message: "Ju lutem shenoje emrin e punetorit"})
       return;
     }
