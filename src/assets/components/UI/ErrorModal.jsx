@@ -13,7 +13,7 @@ const ErrorModal = (props) => {
         </header>
         <section className="p-4">{props.error.message}</section>
         <footer className="p-4 flex justify-end">
-          <Button className="w-32"onClick={props.onConfirm}>Submit</Button>
+          <Button className="w-32 max-[700px]:w-[7rem]"onClick={props.onConfirm}>Submit</Button>
         </footer>
       </Card>
     </div>
